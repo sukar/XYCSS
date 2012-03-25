@@ -7,7 +7,12 @@ Next steps:
   mkdir XYCSS
   cd XYCSS
   git init
-  touch README
+  [IF WINDOWS]
+	copy con README
+	^Z (Ctrl+Z)
+  [ELSE]
+	touch README
+  [END]
   git add README
   git commit -m 'first commit'
   git remote add origin git@github.com:sukar/XYCSS.git
